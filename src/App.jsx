@@ -1,3 +1,4 @@
+import React, { useState } from 'react'; 
 import ProductList from './components/ProductList';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     padding: '20px',
     textAlign: 'center'
   };
-return (
+  return (
     <div style={containerStyle}>
       <h1>React Product Dashboard</h1>
 
@@ -38,7 +39,6 @@ return (
 
       <hr style={{ margin: '20px 0' }} />
 
-      { }
       {showProducts && <ProductList />}
     </div>
   );
